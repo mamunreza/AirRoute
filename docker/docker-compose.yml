@@ -1,0 +1,9 @@
+version: "3.4"
+services:
+  airroute:
+    hostname: air-route
+    build:
+        context: ../
+        dockerfile: ./AirRoute/Dockerfile
+    ports:
+      - "3000:80"
